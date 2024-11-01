@@ -1,0 +1,171 @@
+/*
+ * Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+ * Extend */
+.recipe-meta {
+  margin-bottom: 60px;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid #eee;
+  font-size: 14px;
+  line-height: normal;
+  padding: 25px 0px; }
+  .recipe-meta .meta-item {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    flex-direction: row; }
+    .recipe-meta .meta-item .icon:before {
+      content: "\f4c0";
+      font-size: 30px;
+      font-family: ionicons;
+      float: left;
+      margin-right: 11px; }
+    .recipe-meta .meta-item.cook-time .icon:before {
+      content: "\f3c7"; }
+    .recipe-meta .meta-item.yield .icon:before {
+      content: "\f3cd"; }
+    .recipe-meta .meta-item.servings .icon:before {
+      content: "\f47b"; }
+    .recipe-meta .meta-item.calories .icon:before {
+      content: "\f42e"; }
+    .recipe-meta .meta-item.level .icon:before {
+      content: "\f4a7"; }
+    .recipe-meta .meta-item label {
+      color: #333;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: normal;
+      margin-bottom: 0; }
+    .recipe-meta .meta-item p {
+      line-height: 18px;
+      margin: 0; }
+    .recipe-meta .meta-item:hover .icon {
+      color: #4F8EF7; }
+
+.single-recipe .step label {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.63; }
+  .single-recipe .step label:before {
+    content: "\f401";
+    font-family: ionicons;
+    margin-right: 10px;
+    font-weight: 400; }
+
+.recipe-ingredients {
+  padding: 4px 0px; }
+  .recipe-ingredients ul {
+    list-style: none;
+    margin: 0; }
+  .recipe-ingredients li {
+    cursor: pointer;
+    padding: 4px 0px; }
+    .recipe-ingredients li:before {
+      content: "\f401";
+      font-family: ionicons;
+      margin-right: 10px; }
+    .recipe-ingredients li:last-child {
+      padding-bottom: 0; }
+    .recipe-ingredients li:hover {
+      color: #4F8EF7; }
+    .recipe-ingredients li.completed:before {
+      content: "\f3ff"; }
+
+.single-recipe .entry-header .entry-meta {
+  margin-bottom: 20px; }
+
+.single-recipe .completed {
+  text-decoration: line-through;
+  color: #999; }
+  .single-recipe .completed label {
+    text-decoration: line-through; }
+    .single-recipe .completed label:before {
+      content: "\f3ff";
+      text-decoration: inherit; }
+
+.single-recipe .recipe-ingredients > li.completed:before {
+  content: "\f3ff";
+  text-decoration: inherit; }
+
+.single-recipe .author .avatar {
+  margin-right: 10px; }
+
+.single-recipe .entry-meta {
+  font-size: 14px;
+  line-height: normal; }
+  .single-recipe .entry-meta span {
+    margin-bottom: 0 !important; }
+  .single-recipe .entry-meta .screen-reader-text {
+    height: auto;
+    width: auto;
+    position: relative !important; }
+  .single-recipe .entry-meta a {
+    margin-left: 10px;
+    color: #333; }
+
+.single-recipe .entry-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.single-recipe .entry-footer .screen-reader-text {
+  font-weight: 600; }
+
+.single-recipe .author-wrap {
+  display: flex;
+  align-items: center; }
+
+.single-recipe .info-wrap {
+  padding-left: 10px; }
+
+.single-recipe .author-name a {
+  margin-left: 0px; }
+
+.recipe-steps {
+  margin-top: 23px; }
+  .recipe-steps .step {
+    margin-bottom: 19px;
+    cursor: pointer; }
+    .recipe-steps .step label {
+      margin-bottom: 11px;
+      cursor: pointer;
+      color: #4F8EF7; }
+    .recipe-steps .step:hover {
+      color: #4F8EF7; }
+
+.recipe-notes {
+  margin-top: 24px; }
+
+body.single-recipe article.recipe .entry-content {
+  float: left !important;
+  width: 70% !important;
+  padding-right: 15px; }
+
+.entry-ingredients {
+  width: 30%;
+  float: right;
+  background: #efefef;
+  padding: 15px; }
+
+body.single-recipe article.recipe footer.entry-footer {
+  clear: both;
+  width: 100%;
+  margin-top: 60px; }
+
+/*# sourceMappingURL=maps/frontend.css.map */
